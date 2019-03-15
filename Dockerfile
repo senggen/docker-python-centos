@@ -1,9 +1,9 @@
 FROM centos:7
 
 RUN yum update && \
-    yum install yum-utils && \
-    yum groupinstall development && \
-    yum install https://centos7.iuscommunity.org/ius-release.rpm && \
-    yum install python36u && \
-    yum install python36u-pip && \
-    yum install python36u-devel
+    yum -y install yum-utils && \
+    yum -y groupinstall development && \
+    yum -y install https://centos7.iuscommunity.org/ius-release.rpm && \
+    yum -y install python36u && \
+    yum -y install python36u-pip && \
+    yum -y install python36u-devel
